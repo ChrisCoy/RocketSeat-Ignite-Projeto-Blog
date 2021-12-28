@@ -44,10 +44,11 @@ export default function Post({ post }: PostProps) {
   }
   return (
     <>
-      <h1 className={styles.hide}>Carregando...</h1>
       <Head>{<title>{post?.data.title}</title>}</Head>
 
       <Header />
+
+      <h1 className={styles.hide}>Carregando...</h1>
 
       <img
         src={post?.data.banner.url}
